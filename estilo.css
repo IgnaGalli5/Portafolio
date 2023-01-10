@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://img.freepik.com/vector-gratis/elegante-fondo-blanco-lineas-diagonales_1017-33199.jpg?w=2000);
+}
+
+/*Barra de navegacion*/
+
+.NavBar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    word-spacing: 20px;
+    border: 3px solid black;
+    text-decoration-color: beige;
+    text-align: center;
+    
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8SEhAQEA8VEBUSEA8SFRUVDw8QFRIVFREWFhUTFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJoBRwMBIgACEQEDEQH/xAAbAAEBAQEBAQEBAAAAAAAAAAABAAIDBAUHBv/EADEQAAIBAgMGBAUFAQEAAAAAAAAB8AIRYXHhMUFRkcHRAyGh8QSBsbLCEmJyotIyQv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD9LTeTS+VC7m6d3lil+VRzpWzyxSf3VHRc7863/kDpTzvzrfHI6xv8aUclv88G/wAaTol8rf1XcDopwp1N07vRdWc6Vs9O9R0pV55t9gN0zHQ3NEZU7I0pgAqYGkZU7mpmAzM0ZvOiNIBQuqdzLc7mds2gamYoBQGkaRlGwEQECJkTACIgASICIgAiIgIx4ldhrqscKgMsaaRSECK5MAIiIBFAaQERWID+fo53fzrf+Tqt/q19tJzpe3zwbX20nSl/JrlQutQHRcrcqF3Oi9k/uqOVOCxS/Ko7eHTfFetT7AboV8V61aHZKdEZSnRG5kBJzganuES6sZmAqYmlOxlTsjSmACpgN51M3nUJmBqZkpoE0FTADUyNUoEjaARMmgEQECJkTACEgAiICAQAjNVVhqZyYAwSNIAICZAQEQERIbANiUwKZEBojNyA+BT8lbl4a/0dKd3lik/uqOdO7yxSe791R38Hw/1Yrfxq0A34VN8V9z7HrpU6IKVaeiNKYASmBpRdWC9u7GfyAlMdDSnZGVOyNTIBmQ3nUJqDmICnOIzQFOyNTIBmQpElO5oBFGTSAUaBCAiAgREQEREAERAQNk2YAGZsaAAAQAGTJkwAiFgSKZFMivOoEiuQXASJTAgPifD+F+ri09++vsj6NNNlOSKiiyspghmWoFMhS07slO7H1645AUzGaILzohmQCphqM1YTVlMwGZjNEE0QzIBmWAoEavOIGpmFwTFAaNAIGkIIQFCCECIiAiIAIGxMsAYCwAAEywICIAZExAgmQuYBNQKag3OJNziE0QFNBmQTIZqwIjx/EfEX8k2lfattWWBAdZlqU1Y20XVhM32AuvroM0RS/RF6dNQGZajbZPmwS9urNTMAmYqdkU0QzICmRTVlNWUz0A0piDBCBqk0jKNIDQghQGkaQJCgEiICIiAgIAIGIADAWAAzLFkBlkJAQMZkAFNTDY1VGJ7AM9hmQTLUpqwGas8vj+NfyWx8NtWGQ+L4t/JbOX6nhgcHng2t2CAzd+fnbi9ywQhbBZPZTniIHtmegTRFNEUyAplgNPsurJLDLuzUzApmU0Qz2KZAVpwKasJqxmYBMyQXJAaRowjYCjSMo1SBpG6UVKEBIiASIgIiIAYCwAmAsAAyaAAYCQACmAkAOamK2NVRhzsBTQJlqMy1KasCmrOHi+JuWz7sMh8Wu/l8s3wWByejfDBAZe/1fRGb+nKldzXpblSu5n3S61AYawvhxxbInnt2tLzeWBAe+ZajSp1ZKnvqzczAJmE0QzRFMgKZA3OrK86sJmBTMLg2TYDcjCZtAapNmEbQCjtRTYKKLGwIUAoCIiASIgIiIAYCwAmAsAABACCZCZYEZqZOqcTDAJ7F6dCmRWnVgU1Zy8Sub6sMhrqnEw/dr6IDLzzfDBGHy+lK7m+n9dTD9l1YGXrbjizLnGrQ163/ALPsZejfD9tIA80rb9ywQhLPZSscRA+lacQmhqaA1OAA5gDc6sm51M3nECcxMk2ZqqsAtmLmP1XNIDaNo5o6IDSPT4dFg8Lw7bToBERAQoBQEREBCAgREQAwFgBMBAAAWQGTNdQ11HO86ADmhTIZkE1AJqYqc4i3OJlx9EBmr37Iy5hqacw1MvW3VgZlurMvn+T7GrfPqwejf4oDLe3k3wwRl8rL5Urua9LcqV3M8PRflUBlrBvelfzf7mRXXHye9bassCA+o5gZqc6i3OpiZgTmJhi2Y8StJefuAV1pHD9VzFVTbuxQHRG0YRukDaR6/B8K3m9peB4NvN7TsBERAREQEREAoCIBEBAiIgBgLACAQQAzLZVMw52AG50CZC5gE1YBNWDc4i5iZfu+iAy4+iB/T0FzAy53YGZqwfO/q+wzMnH0QGI30QPl9KV1ZpzhSu5l7vRfkwM27pccWZfO/wDZ9jXrf+z7Gant5NrdhSBlvb524vhghD5LLcsyA+k5ic2zde0ygOXjeIqV5nhqrbd2a+M/65HNAdEdEc6TogN0I+h8P4Fld7foeb4D/p5H0AIiICIiAiIgIrkwASIgEQECIiAGAsAIxUzbObAyTk4jTuDgBmasHMRe/NA94GXOyBzA1vRhbF8wBzuzLmOhrjmFW2rJAZc7IPT6LU0ttORhbKf5MAlurMvnfnVoO6r+SQV7asgMv3fSky+VuVK7mltp/iYX/n+TAzbda+HHFiDflU/3WID/2Q==);
+    background-size: cover;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:antiquewhite
+
+}
+
+.est:hover{
+    color: rgb(140, 127, 255);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 5px;
+    padding-top: 100px;
+    margin-top: 30px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: myAnim 1.5s ease 0s 1 normal forwards;
+    
+}
+/*--------------------INTRO*/
+
+.textos1{
+    padding: 20px;
+    text-align: justify;
+    margin: 100px 35px 50px 45px;
+    font-size: 20px;
+    color: black;
+    
+    
+}
+.datos{
+    
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.idioma{
+    margin-left: 20px;
+}
+
+/*------------------------Estudios-----------------*/
+
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+
+}
+
+.estudios{
+    
+   padding: 30px;
+   font-size: 20px;
+   line-height: 200%;
+ 
+}
+.est{
+    padding: 30px;
+    
+    color: black;
+    text-decoration: none;
+}
+
+/*--------------------------------------------*/
+
+.dashboard {
+    display: flex;
+  }
+  
+  svg {
+    width: 114px;
+    height: 114px;
+    margin: 1em;
+  }
+  
+  .bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #1A2C34;
+  }
+  
+  [class^="meter-"] {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    
+  }
+  
+  .meter-1 {
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    stroke: aqua;
+    animation: progress-1 1s ease-out;
+  }
+  .meter-2 {
+    stroke: lime;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 160;
+    animation: progress-2 .75s ease-out;
+  }
+  .meter-3 {
+    stroke: magenta;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 250;
+    animation: progress-3 .5s ease-out;
+  }
+  
+ 
+
+
+/*------------------Proyectos------------------------*/
+
+.Proyect{
+    padding: 30px;
+}
+
+.Proyectos{
+    transition: transform 0.5s;
+    display:grid;
+    grid-template-columns: repeat( auto-fit,minmax(350px,1fr));
+    grid-gap:10px;
+    margin-left: 50px; 
+   
+}
+.Proyectos a:hover{
+    
+    transform:scale(1.2)  ;
+    transition: transform 0.8s;
+}
+
+
+.pry{
+    
+    vertical-align: top;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 30px; 
+    }
+
+/*----------------------REDES------------------------*/
+
+.redes{
+    padding: 30px;
+    letter-spacing: 15px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+
+.img{
+    
+    height: 50px;
+    width: 50px;
+}
+
+
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateY(-70deg);
+		transform-origin: left;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
+	}
+}
+
+    /*------------------------------*/
+

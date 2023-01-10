@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210403/pngtree-abstract-decorative-amorphous-waves-form-vectors-editable-backgrounds-for-your-landing-image_602942.jpg);
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 20px;
+    background-color: rgb(248, 248, 248);
+    width: 900px;
+    height: 650px;
+    border-radius: 20px;
+    
+}
+
+#nombre{
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+#asunto{
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#text{
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#button{
+    margin-top: 20px;
+    margin-left: 350px;
+    width: 100px;
+    background-color: rgb(216, 213, 213);
+    
+}

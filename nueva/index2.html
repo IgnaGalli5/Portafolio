@@ -5,12 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo2.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Raleway:ital,wght@0,100;0,200;0,300;1,100&family=Redressed&family=Righteous&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Raleway:ital,wght@0,100;0,200;0,300;1,100&family=Redressed&family=Righteous&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Mas Aún</title>
+   
 </head>
-<body>
-   <h1 id="titulo">Nacido en los 90's</h1>
+<script type="text/javascript">
+    function Mostrar(){
+        document.getElementById("foo").style.display="block";
+        }
 
-   <img src="../images/">
+    function Ocultar(){
+        document.getElementById("foo").style.display="none";
+    }
+
+    function Mostrar_Ocultar(){
+
+        var foo = document.getElementById("foo");
+
+        if(foo.style.display =="none"){
+            Mostrar();
+        }
+        else {
+            Ocultar();
+        }
+    }
+
+    function Mostrar_Q(){
+        document.getElementById("queen").style.display="block";
+        }
+
+    function Ocultar_Q(){
+        document.getElementById("queen").style.display="none";
+    }
+
+    function Mostrar_Ocultar_Q(){
+
+        var queen = document.getElementById("queen");
+
+        if(queen.style.display =="none"){
+            Mostrar_Q();
+        }
+        else {
+            Ocultar_Q();
+        }
+    }
+    
+
+    function Mostrar_N(){
+        document.getElementById("nirvana").style.display="block";
+        }
+
+    function Ocultar_N(){
+        document.getElementById("nirvana").style.display="none";
+    }
+
+    function Mostrar_Ocultar_N(){
+
+        var queen = document.getElementById("nirvana");
+
+        if(nirvana.style.display =="none"){
+            Mostrar_N();
+        }
+        else {
+            Ocultar_N();
+        }
+    }
+
+    
+
+</script>
+<body>
+   <header>
+    <img class="logo" src="../nueva/imagenes2/logo.png">
+   </header>
+   
+   
+    
+        <div class="text1">
+            <p>En esta sección puedes ver mis pasatiempos fuera de lo que es la programación,<br> 
+                los dibujos animados con los que crecí, mi música favorita, videojuegos y más </p>  
+                
+        </div>
+        <!---------------------------MUSICA-------------------------------------->
+        <div class="musica">
+            
+            
+            <p>Crecí rodeado de música ya que mis padres eran apasionados por ella, desde que estaba en la panza de mi madre
+                 Queen, B.B king, Eric clapton, Genesis, Divididos y demás bandas sonaban a mi alrededor,
+                 y heredé todo esto ampliando más mis horizontes llegando a encontrar mi gran pasión en la Música.
+                 Tomando la guitarra como mi gran amor e incursionando en menor manera con el Bajo, Piano y  la Batería.
+                 Hoy puedo decir que mis bandas preferidas son Queen, Foo Fighters, Kyosko, Green Day 
+ 
+            </p>
+
+                <button  value="Ocultar" id="ff" onclick="Mostrar_Ocultar()"><img class="foof"  src="../nueva/imagenes2/ff.png" alt="foo fighters" ></button>
+                <button  value="Ocultar" id="qn" onclick="Mostrar_Ocultar_Q()"><img class="queen" src="../nueva/imagenes2/queen.png" alt="Queen" ></button>
+                <button  value="Ocultar" id="nir" onclick="Mostrar_Ocultar_N()"><img class="nirvana" src="../nueva/imagenes2/nirvana.png" alt="nirvana" ></button>
+            <section  class="tv">
+                    <video  src="../nueva/best of you.mp4" controls id="foo" ></video>
+                    <video  src="../nueva/queen.mp4" controls id="queen" ></video>
+                    <video  src="../nueva/nirvana.mp4" controls id="nirvana" ></video>
+
+
+            </section>
+        </div>
+        <!---------------------------DIBUJOS-------------------------------------->
+        <div class="dibujos">
+            <!-----
+            <img class="feno" src="../nueva/imagenes2/feno.png" style="height: 250px";>
+            <img class="seiya" src="../nueva/imagenes2/caballeros.jpg">----->
+
+        </div>
+        <!--------------------------JUEGOS-------------------------------------->
+        <div class="juegos">
+
+        </div>
+        <!---------------------------COCINA-------------------------------------->
+        <div class="cocina">
+
+        </div>
+        
+        
+
+   
+    
+
+  
 
 </body>
+
 </html>

@@ -2,12 +2,148 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+         
+    
 }
 
 body{
+    
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header header header" 
+	"text1 text1 text1"
+	
+	"musica musica musica"
+	"dibujos dibujos dibujos"
+	"juegos juegos juegos"
+    "cocina cocina cocina"
+    ;
+    
+}
+
+
+header{
+    background-color: rgb(34, 34, 34);
+    grid-area: header;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px 15px 15px;
+     
+
+}
+
+
+
+/*-----------------------------------------TEXT1-------------------------------------------------------*/
+.text1{
+    height: 100%;
+    width: 100%;
+    grid-area: text1;
+    display: grid;
+}
+
+.text1 > p{
+    color: rgb(206, 63, 63);
+    text-align: center;
     background-color: black;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    padding: 20px 30px 30px 30px;
 }
-#titulo{
-    color: brown;
+
+/*----------------------------------------MUSICA--------------------------------------------------------*/
+.musica{
+    grid-area: musica;
+    /*background-image: url(../nueva/imagenes2/musica3.jpg);*/
+    background-size:contain;
+    height: 800px;
+    background-color:rgba(0, 0, 0) ;
+    position: relative;
+
+
+    
 }
+
+.musica > p{
+    color: rgb(206, 63, 63);
+    font-family: 'Righteous', cursive;
+    padding: 20px 30px 30px 30px;
+    font-size: 20px;
+}
+
+/*-------------------BOTONES-----------------------*/
+.foof{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 0, 0) ;
+    
+}
+.queen{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 0, 0) ;
+}
+
+.nirvana{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 0, 0) ;
+    
+}
+
+.musica >button{
+    border: 0;
+    
+}
+/*--------------------------VIDEOS-----------------------------------*/
+
+
+
+.tv{
+    width: 650px;
+    height: 450px;  
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../nueva/imagenes2/tv.png);
+    background-size: cover;
+    
+      
+}
+
+ 
+.tv > video{
+    width: 420px;
+    height: 270px;   
+    border-radius: 60px;
+    position: absolute;
+    text-align: center;
+           
+}
+
+
+/*----------------------------------------DIBUJOS-------------------------------------------------------*/
+.dibujos{
+    grid-area: dibujos;
+}
+/*----------------------------------------JUEGOS--------------------------------------------------------*/
+.juegos{
+    grid-area: juegos;
+}
+/*----------------------------------------COCINA--------------------------------------------------------*/
+.cocina{
+    grid-area: cocina;
+}
+
+
+
+

@@ -14,64 +14,64 @@
    
 </head>
 <script type="text/javascript">
-    function Mostrar(){
-        document.getElementById("foo").style.display="block";
-        }
-
     function Ocultar(){
         document.getElementById("foo").style.display="none";
+        }
+
+    function Mostrar(){
+        document.getElementById("foo").style.display="block";
     }
 
     function Mostrar_Ocultar(){
 
         var foo = document.getElementById("foo");
 
-        if(foo.style.display =="none"){
-            Mostrar();
+        if(foo.style.display =="block"){
+            Ocultar();
         }
         else {
-            Ocultar();
+            Mostrar();
         }
     }
 
-    function Mostrar_Q(){
-        document.getElementById("queen").style.display="block";
-        }
-
     function Ocultar_Q(){
         document.getElementById("queen").style.display="none";
+        }
+
+    function Mostrar_Q(){
+        document.getElementById("queen").style.display="block";
     }
 
     function Mostrar_Ocultar_Q(){
 
         var queen = document.getElementById("queen");
 
-        if(queen.style.display =="none"){
-            Mostrar_Q();
+        if(queen.style.display =="block"){
+           Ocultar_Q();
         }
         else {
-            Ocultar_Q();
+            Mostrar_Q();
         }
     }
     
 
-    function Mostrar_N(){
-        document.getElementById("nirvana").style.display="block";
-        }
-
     function Ocultar_N(){
         document.getElementById("nirvana").style.display="none";
+        }
+
+    function Mostrar_N(){
+        document.getElementById("nirvana").style.display="block";
     }
 
     function Mostrar_Ocultar_N(){
 
         var queen = document.getElementById("nirvana");
 
-        if(nirvana.style.display =="none"){
-            Mostrar_N();
+        if(nirvana.style.display =="block"){
+            Ocultar_N();
         }
         else {
-            Ocultar_N();
+            Mostrar_N();
         }
     }
 
@@ -101,10 +101,13 @@
                  Hoy puedo decir que mis bandas preferidas son Queen, Foo Fighters, Kyosko, Green Day 
  
             </p>
-
+            <div class="button">
                 <button  value="Ocultar" id="ff" onclick="Mostrar_Ocultar()"><img class="foof"  src="../nueva/imagenes2/ff.png" alt="foo fighters" ></button>
                 <button  value="Ocultar" id="qn" onclick="Mostrar_Ocultar_Q()"><img class="queen" src="../nueva/imagenes2/queen.png" alt="Queen" ></button>
                 <button  value="Ocultar" id="nir" onclick="Mostrar_Ocultar_N()"><img class="nirvana" src="../nueva/imagenes2/nirvana.png" alt="nirvana" ></button>
+            </div>
+            
+            
             <section  class="tv">
                     <video  src="../nueva/best of you.mp4" controls id="foo" ></video>
                     <video  src="../nueva/queen.mp4" controls id="queen" ></video>

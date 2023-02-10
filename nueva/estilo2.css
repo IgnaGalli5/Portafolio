@@ -8,6 +8,7 @@
 
 body{
     
+    background-color: black;
     display: grid;
     width: 100%;
     height: 100%;
@@ -67,6 +68,13 @@ header{
     height: 800px;
     background-color:rgba(0, 0, 0) ;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "parrafo parrafo parrafo"
+    "button button button"
+    "tv tv tv";
 
 
     
@@ -77,6 +85,7 @@ header{
     font-family: 'Righteous', cursive;
     padding: 20px 30px 30px 30px;
     font-size: 20px;
+    grid-area: parrafo;
 }
 
 /*-------------------BOTONES-----------------------*/
@@ -85,22 +94,30 @@ header{
     height: 100px;
     background-color:rgba(0, 0, 0) ;
     
+    
 }
 .queen{
-    width: 100px;
-    height: 100px;
-    background-color:rgba(0, 0, 0) ;
-}
-
-.nirvana{
     width: 100px;
     height: 100px;
     background-color:rgba(0, 0, 0) ;
     
 }
 
-.musica >button{
+.nirvana{
+    width: 100px;
+    height: 100px;
+    background-color:rgba(0, 0, 0) ;
+   
+    
+}
+
+.button >button{
     border: 0;
+    
+}
+
+.button{
+    grid-area: button;
     
 }
 /*--------------------------VIDEOS-----------------------------------*/
@@ -110,23 +127,29 @@ header{
 .tv{
     width: 650px;
     height: 450px;  
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    grid-area: tv;
     background-image: url(../nueva/imagenes2/tv.png);
     background-size: cover;
+    align-items:center;
+    justify-self: center;
     
       
 }
 
  
 .tv > video{
-    width: 420px;
+    width: 410px;
     height: 270px;   
     border-radius: 60px;
     position: absolute;
-    text-align: center;
+    display: none;
+    margin-top: 70px;
+    margin-left: 60px;
+    animation: myAnim 0.3s ease 0s 1 normal forwards;
+    
+
+    
            
 }
 
@@ -145,5 +168,13 @@ header{
 }
 
 
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
 
+	100% {
+		transform: scale(1);
+	}
+}
 
